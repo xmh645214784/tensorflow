@@ -373,11 +373,12 @@ def tf_workspace(path_prefix = "", tf_repo_name = ""):
 
     # 5902e759108d14ee8e6b0b07653dac2f4e70ac73 is based on 3.7.1 with a fix for BUILD file.
     PROTOBUF_URLS = [
-        "http://mirror.tensorflow.org/github.com/protocolbuffers/protobuf/archive/5902e759108d14ee8e6b0b07653dac2f4e70ac73.tar.gz",
-        "https://github.com/protocolbuffers/protobuf/archive/5902e759108d14ee8e6b0b07653dac2f4e70ac73.tar.gz",
+        # "https://github.com/protocolbuffers/protobuf/archive/5902e759108d14ee8e6b0b07653dac2f4e70ac73.tar.gz",
+        "https://github.com/protocolbuffers/protobuf/archive/d0bfd5221182da1a7cc280f3337b5e41a89539cf.tar.gz",
     ]
-    PROTOBUF_SHA256 = "1c020fafc84acd235ec81c6aac22d73f23e85a700871466052ff231d69c1b17a"
-    PROTOBUF_STRIP_PREFIX = "protobuf-5902e759108d14ee8e6b0b07653dac2f4e70ac73"
+    # PROTOBUF_SHA256 = "1c020fafc84acd235ec81c6aac22d73f23e85a700871466052ff231d69c1b17a"
+    PROTOBUF_SHA256 = "2435b7fb83b8a608c24ca677907aa9a35e482a7f018e65ca69481b3c8c9f7caf"
+    PROTOBUF_STRIP_PREFIX = "protobuf-d0bfd5221182da1a7cc280f3337b5e41a89539cf"
 
     tf_http_archive(
         name = "protobuf_archive",
